@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Школьный портал</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#/" data-route>
+        <span class="brand__mark">Ш</span>
+        <span>
+          <strong>Школьный портал</strong>
+          <small>единая система школы</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Разделы сайта">
+        <a href="#/" data-route>Главная</a>
+        <a href="#/schedule" data-route>Расписание</a>
+        <a href="#/classes" data-route>Классы</a>
+        <a href="#/subjects" data-route>Предметы</a>
+        <a href="#/students" data-route>Ученики</a>
+        <a href="#/staff" data-route>Сотрудники</a>
+      </nav>
+    </header>
+
+    <main id="app" class="app-shell"></main>
+
+    <footer class="site-footer">
+      <span>Школьный портал</span>
+      <span>Данные загружаются из таблиц школы: сотрудники, классы, ученики, предметы и расписание.</span>
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
