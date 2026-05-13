@@ -478,44 +478,7 @@ function renderHome() {
     </div>
   `;
 
-  const contacts = document.createElement('section');
-  contacts.className = 'section home-contacts';
-  contacts.id = 'contacts';
-  contacts.innerHTML = `
-    <div class="school-contacts" aria-labelledby="contactsTitle">
-      <div class="school-contacts__header">
-        <div>
-          <p class="eyebrow">Контакты</p>
-          <h2 id="contactsTitle">Связаться со школой</h2>
-        </div>
-        <span class="school-contacts__badge">Школьный портал</span>
-      </div>
-      <div class="contacts-grid">
-        <article class="contact-card">
-          <span>Адрес</span>
-          <strong>г. Москва, ул. Пушкина, д. 10</strong>
-        </article>
-        <article class="contact-card">
-          <span>Телефон приемной</span>
-          <strong><a href="tel:+7495446996">44-69-96</a></strong>
-        </article>
-        <article class="contact-card">
-          <span>Телефон канцелярии</span>
-          <strong><a href="tel:+7495446229">44-62-29</a></strong>
-        </article>
-        <article class="contact-card">
-          <span>E-mail</span>
-          <strong><a href="mailto:akademiya.detstva@yandex.ru">akademiya.detstva@yandex.ru</a></strong>
-        </article>
-      </div>
-      <div class="school-contacts__bottom">
-        <span>Режим работы: понедельник - пятница, 08:00 - 18:00</span>
-        <span>Данные сайта собраны из школьной базы: классы, ученики, предметы, сотрудники и расписание.</span>
-      </div>
-    </div>
-  `;
-
-  root.append(hero, overview, story, cards, initiatives, sponsors, split, contacts);
+  root.append(hero, overview, story, cards, initiatives, sponsors, split);
   appElement.replaceChildren(root);
   loadHomePreviews();
 }
@@ -1080,6 +1043,7 @@ function render() {
   const path = currentPath();
   const page = pages[path];
   document.title = `${page.title} | Школьный портал`;
+  document.body.classList.toggle('is-home', page.key === 'home');
   updateActiveNav();
   renderAuthBar();
 

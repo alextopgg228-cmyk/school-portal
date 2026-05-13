@@ -1028,8 +1028,13 @@ tbody tr:hover {
   font-weight: 800;
 }
 
-.home-contacts {
-  padding-bottom: 10px;
+.home-only-contacts {
+  display: none;
+  margin-bottom: 18px;
+}
+
+body.is-home .home-only-contacts {
+  display: block;
 }
 
 .school-contacts {
