@@ -1010,10 +1010,84 @@ tbody tr:hover {
 }
 
 .site-footer {
+  padding: 28px 0 42px;
+}
+
+.school-contacts {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f8fffd 0%, #ffffff 58%, #eef4ff 100%);
+  box-shadow: 0 12px 30px rgba(31, 41, 51, 0.06);
+}
+
+.school-contacts__header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.school-contacts__header h2 {
+  margin-bottom: 0;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.school-contacts__badge {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--teal-dark);
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.8fr 0.8fr 1.25fr;
+  gap: 12px;
+}
+
+.contact-card {
+  min-height: 104px;
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.contact-card span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.contact-card strong {
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.contact-card a:hover {
+  color: var(--teal-dark);
+}
+
+.school-contacts__bottom {
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  padding: 22px 0 36px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 13px;
 }
@@ -1047,6 +1121,10 @@ tbody tr:hover {
   .initiative-grid,
   .sponsor-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contacts-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
   .initiative-card--wide {
@@ -1091,7 +1169,8 @@ tbody tr:hover {
   .workspace__header,
   .section__header,
   .page-hero,
-  .site-footer,
+  .school-contacts__header,
+  .school-contacts__bottom,
   .schedule-admin__header,
   .schedule-editor__actions,
   .login-grid {
@@ -1114,6 +1193,10 @@ tbody tr:hover {
 
   .stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contacts-grid {
+    grid-template-columns: 1fr;
   }
 
   .button,

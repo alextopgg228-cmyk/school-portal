@@ -312,7 +312,11 @@ function renderHealth() {
     return status;
   }
 
-  status.textContent = state.health.mode === 'static' ? 'Опубликованная версия GitHub Pages' : 'Открыт учебный демо-набор данных';
+  if (state.health.mode === 'static') {
+    return document.createDocumentFragment();
+  }
+
+  status.textContent = 'Открыт учебный демо-набор данных';
   status.title = state.health.error || '';
   return status;
 }
