@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Семейный МФЦ</title>
+  <desc id="desc">Логотип Семейный МФЦ</desc>
+  <rect width="1080" height="1080" fill="#ffffff"/>
+  <g fill="#0bb37d">
+    <circle cx="462" cy="216" r="42"/>
+    <circle cx="616" cy="256" r="42"/>
+    <circle cx="306" cy="472" r="42"/>
+    <circle cx="616" cy="472" r="42"/>
+    <circle cx="776" cy="472" r="42"/>
+    <path d="M358 522V370c0-72 52-120 104-120 44 0 78 22 102 62 24-29 56-44 94-44 66 0 118 54 118 126v128h-54V394c0-42-28-72-66-72-40 0-70 30-70 72v128h-54V396c0-54-30-92-76-92-42 0-74 36-74 88v130z"/>
+  </g>
+  <g fill="#1f1f1f" font-family="Arial, Helvetica, sans-serif" font-weight="900" text-anchor="middle">
+    <text x="540" y="688" font-size="132">семейный</text>
+    <text x="540" y="848" font-size="132">мфц</text>
+  </g>
+</svg>

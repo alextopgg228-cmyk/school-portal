@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1150" height="768" viewBox="0 0 1150 768" role="img" aria-labelledby="title desc">
+  <title id="title">Всероссийское голосование по выбору объектов благоустройства</title>
+  <desc id="desc">Фиолетовый информационный баннер с фонтаном</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#8b4cf6"/>
+      <stop offset="1" stop-color="#d94edb"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#bfe8ff"/>
+      <stop offset="1" stop-color="#7c6df1" stop-opacity=".2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1150" height="768" fill="url(#bg)"/>
+  <g fill="#fff" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="76" y="266" font-size="56">Всероссийское голосование</text>
+    <text x="76" y="336" font-size="56">по выбору объектов</text>
+    <text x="76" y="406" font-size="56">благоустройства</text>
+  </g>
+  <g transform="translate(688 176)">
+    <path d="M164 120c0-55 24-102 54-102s54 47 54 102h-40c0-31-7-58-14-58s-14 27-14 58z" fill="url(#water)"/>
+    <path d="M80 118c0-48 16-84 38-84s38 36 38 84h-38c0-25-4-45-8-45s-8 20-8 45z" fill="url(#water)"/>
+    <g fill="#fff" stroke="#111" stroke-width="7" stroke-linejoin="round">
+      <path d="M165 130h44v28h-44z"/>
+      <path d="M128 154h120c-4 29-28 47-60 47s-56-18-60-47z"/>
+      <path d="M184 199h8c20 48 40 88 82 101-18 24-52 38-86 38s-68-14-86-38c42-13 62-53 82-101z"/>
+      <path d="M60 320c32-34 224-34 256 0-20 40-236 40-256 0z"/>
+      <path d="M30 350c50 45 266 45 316 0v48c-54 38-262 38-316 0z"/>
+      <path d="M8 400c78 56 282 56 360 0v42c-82 52-278 52-360 0z"/>
+    </g>
+  </g>
+</svg>
